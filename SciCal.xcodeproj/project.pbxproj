@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D79E66BA1A7E0BCC00C71613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E66B91A7E0BCC00C71613 /* AppDelegate.swift */; };
-		D79E66BC1A7E0BCC00C71613 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E66BB1A7E0BCC00C71613 /* ViewController.swift */; };
 		D79E66BF1A7E0BCC00C71613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79E66BD1A7E0BCC00C71613 /* Main.storyboard */; };
 		D79E66C11A7E0BCC00C71613 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79E66C01A7E0BCC00C71613 /* Images.xcassets */; };
 		D79E66C41A7E0BCC00C71613 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D79E66C21A7E0BCC00C71613 /* LaunchScreen.xib */; };
 		D79E66D01A7E0BCC00C71613 /* SciCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E66CF1A7E0BCC00C71613 /* SciCalTests.swift */; };
+		D79E66DA1A7E0D3F00C71613 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E66D91A7E0D3F00C71613 /* MainViewController.swift */; };
+		D7A14F0D1A829463006A85DA /* CalcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A14F0C1A829463006A85DA /* CalcModel.swift */; };
+		D7D1503C1A7E277C00454554 /* CalcBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D1503B1A7E277C00454554 /* CalcBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		D79E66B41A7E0BCC00C71613 /* SciCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79E66B81A7E0BCC00C71613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D79E66B91A7E0BCC00C71613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D79E66BB1A7E0BCC00C71613 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D79E66BE1A7E0BCC00C71613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D79E66C01A7E0BCC00C71613 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D79E66C31A7E0BCC00C71613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D79E66C91A7E0BCC00C71613 /* SciCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SciCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79E66CE1A7E0BCC00C71613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D79E66CF1A7E0BCC00C71613 /* SciCalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciCalTests.swift; sourceTree = "<group>"; };
+		D79E66D91A7E0D3F00C71613 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D7A14F0C1A829463006A85DA /* CalcModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcModel.swift; sourceTree = "<group>"; };
+		D7D1503B1A7E277C00454554 /* CalcBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,10 @@
 		D79E66B61A7E0BCC00C71613 /* SciCal */ = {
 			isa = PBXGroup;
 			children = (
-				D79E66B91A7E0BCC00C71613 /* AppDelegate.swift */,
-				D79E66BB1A7E0BCC00C71613 /* ViewController.swift */,
+				D7D1503B1A7E277C00454554 /* CalcBrain.swift */,
+				D7A14F0C1A829463006A85DA /* CalcModel.swift */,
+				D79E66D91A7E0D3F00C71613 /* MainViewController.swift */,
 				D79E66BD1A7E0BCC00C71613 /* Main.storyboard */,
-				D79E66C01A7E0BCC00C71613 /* Images.xcassets */,
-				D79E66C21A7E0BCC00C71613 /* LaunchScreen.xib */,
 				D79E66B71A7E0BCC00C71613 /* Supporting Files */,
 			);
 			path = SciCal;
@@ -90,6 +93,9 @@
 		D79E66B71A7E0BCC00C71613 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D79E66B91A7E0BCC00C71613 /* AppDelegate.swift */,
+				D79E66C01A7E0BCC00C71613 /* Images.xcassets */,
+				D79E66C21A7E0BCC00C71613 /* LaunchScreen.xib */,
 				D79E66B81A7E0BCC00C71613 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -156,11 +162,14 @@
 		D79E66AC1A7E0BCC00C71613 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = BinWu;
 				TargetAttributes = {
 					D79E66B31A7E0BCC00C71613 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = JG7P2QYPN7;
 					};
 					D79E66C81A7E0BCC00C71613 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -212,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D79E66BC1A7E0BCC00C71613 /* ViewController.swift in Sources */,
 				D79E66BA1A7E0BCC00C71613 /* AppDelegate.swift in Sources */,
+				D79E66DA1A7E0D3F00C71613 /* MainViewController.swift in Sources */,
+				D7A14F0D1A829463006A85DA /* CalcModel.swift in Sources */,
+				D7D1503C1A7E277C00454554 /* CalcBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +286,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -289,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,8 +350,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SciCal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bingo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -348,8 +363,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SciCal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bingo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -368,6 +386,7 @@
 				);
 				INFOPLIST_FILE = SciCalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bingo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SciCal.app/SciCal";
 			};
@@ -383,6 +402,7 @@
 				);
 				INFOPLIST_FILE = SciCalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bingo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SciCal.app/SciCal";
 			};
@@ -407,6 +427,7 @@
 				D79E66D51A7E0BCC00C71613 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D79E66D61A7E0BCC00C71613 /* Build configuration list for PBXNativeTarget "SciCalTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +436,7 @@
 				D79E66D81A7E0BCC00C71613 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
